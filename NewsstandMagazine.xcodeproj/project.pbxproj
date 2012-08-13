@@ -16,6 +16,31 @@
 		B9227F1B15CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9227F1915CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard */; };
 		B9227F1E15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9227F1C15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard */; };
 		B9227F2115CBBF1F005216A8 /* GRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2015CBBF1F005216A8 /* GRViewController.m */; };
+		B9227F2F15CBBF5A005216A8 /* MagazineGridViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2915CBBF5A005216A8 /* MagazineGridViewCellViewController.m */; };
+		B9227F3015CBBF5A005216A8 /* MagazineGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2B15CBBF5A005216A8 /* MagazineGridViewCell.m */; };
+		B9227F3115CBBF5A005216A8 /* MagazineGridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9227F2C15CBBF5A005216A8 /* MagazineGridViewCell.xib */; };
+		B9227F3215CBBF5A005216A8 /* MagazineReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2E15CBBF5A005216A8 /* MagazineReaderViewController.m */; };
+		B9227F3715CBBF8A005216A8 /* UIDownloadBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */; };
+		B9227F3C15CBBF97005216A8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3915CBBF97005216A8 /* MBProgressHUD.m */; };
+		B9227F3D15CBBF97005216A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3B15CBBF97005216A8 /* Reachability.m */; };
+		B9227F5615CBBFDA005216A8 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4015CBBFDA005216A8 /* AQGridView.m */; };
+		B9227F5715CBBFDA005216A8 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4415CBBFDA005216A8 /* AQGridViewAnimatorItem.m */; };
+		B9227F5815CBBFDA005216A8 /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4615CBBFDA005216A8 /* AQGridViewCell.m */; };
+		B9227F5915CBBFDA005216A8 /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4915CBBFDA005216A8 /* AQGridViewController.m */; };
+		B9227F5A15CBBFDA005216A8 /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4B15CBBFDA005216A8 /* AQGridViewData.m */; };
+		B9227F5B15CBBFDA005216A8 /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4D15CBBFDA005216A8 /* AQGridViewUpdateInfo.m */; };
+		B9227F5C15CBBFDA005216A8 /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4F15CBBFDA005216A8 /* AQGridViewUpdateItem.m */; };
+		B9227F5D15CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F5115CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		B9227F5E15CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F5315CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m */; };
+		B9227F5F15CBBFDA005216A8 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F5515CBBFDA005216A8 /* UIColor+AQGridView.m */; };
+		B9227F6315CBBFE3005216A8 /* iPhone-alert.png in Resources */ = {isa = PBXBuildFile; fileRef = B9227F6015CBBFE3005216A8 /* iPhone-alert.png */; };
+		B9227F6415CBBFE3005216A8 /* ipad-alert.png in Resources */ = {isa = PBXBuildFile; fileRef = B9227F6115CBBFE3005216A8 /* ipad-alert.png */; };
+		B9227F6515CBBFE3005216A8 /* no-image.png in Resources */ = {isa = PBXBuildFile; fileRef = B9227F6215CBBFE3005216A8 /* no-image.png */; };
+		B9227F6815CBC026005216A8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6715CBC026005216A8 /* ImageIO.framework */; };
+		B9227F6A15CBC031005216A8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6915CBC031005216A8 /* MessageUI.framework */; };
+		B9227F6C15CBC040005216A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6B15CBC040005216A8 /* StoreKit.framework */; };
+		B9227F6E15CBC046005216A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6D15CBC046005216A8 /* SystemConfiguration.framework */; };
+		B9227F7015CBC053005216A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6F15CBC053005216A8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +58,50 @@
 		B9227F1D15CBBF1F005216A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B9227F1F15CBBF1F005216A8 /* GRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRViewController.h; sourceTree = "<group>"; };
 		B9227F2015CBBF1F005216A8 /* GRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRViewController.m; sourceTree = "<group>"; };
+		B9227F2815CBBF5A005216A8 /* MagazineGridViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineGridViewCellViewController.h; sourceTree = "<group>"; };
+		B9227F2915CBBF5A005216A8 /* MagazineGridViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineGridViewCellViewController.m; sourceTree = "<group>"; };
+		B9227F2A15CBBF5A005216A8 /* MagazineGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineGridViewCell.h; sourceTree = "<group>"; };
+		B9227F2B15CBBF5A005216A8 /* MagazineGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineGridViewCell.m; sourceTree = "<group>"; };
+		B9227F2C15CBBF5A005216A8 /* MagazineGridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagazineGridViewCell.xib; sourceTree = "<group>"; };
+		B9227F2D15CBBF5A005216A8 /* MagazineReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineReaderViewController.h; sourceTree = "<group>"; };
+		B9227F2E15CBBF5A005216A8 /* MagazineReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineReaderViewController.m; sourceTree = "<group>"; };
+		B9227F3515CBBF8A005216A8 /* UIDownloadBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownloadBar.h; sourceTree = "<group>"; };
+		B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownloadBar.m; sourceTree = "<group>"; };
+		B9227F3815CBBF97005216A8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B9227F3915CBBF97005216A8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B9227F3A15CBBF97005216A8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B9227F3B15CBBF97005216A8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B9227F3F15CBBFDA005216A8 /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		B9227F4015CBBFDA005216A8 /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		B9227F4115CBBFDA005216A8 /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		B9227F4215CBBFDA005216A8 /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		B9227F4315CBBFDA005216A8 /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		B9227F4415CBBFDA005216A8 /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		B9227F4515CBBFDA005216A8 /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		B9227F4615CBBFDA005216A8 /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		B9227F4715CBBFDA005216A8 /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		B9227F4815CBBFDA005216A8 /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		B9227F4915CBBFDA005216A8 /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		B9227F4A15CBBFDA005216A8 /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		B9227F4B15CBBFDA005216A8 /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		B9227F4C15CBBFDA005216A8 /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		B9227F4D15CBBFDA005216A8 /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		B9227F4E15CBBFDA005216A8 /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		B9227F4F15CBBFDA005216A8 /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		B9227F5015CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		B9227F5115CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		B9227F5215CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		B9227F5315CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		B9227F5415CBBFDA005216A8 /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		B9227F5515CBBFDA005216A8 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		B9227F6015CBBFE3005216A8 /* iPhone-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone-alert.png"; sourceTree = "<group>"; };
+		B9227F6115CBBFE3005216A8 /* ipad-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-alert.png"; sourceTree = "<group>"; };
+		B9227F6215CBBFE3005216A8 /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image.png"; sourceTree = "<group>"; };
+		B9227F6715CBC026005216A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B9227F6915CBC031005216A8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B9227F6B15CBC040005216A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B9227F6D15CBC046005216A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B9227F6F15CBC053005216A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +109,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9227F7015CBC053005216A8 /* QuartzCore.framework in Frameworks */,
+				B9227F6E15CBC046005216A8 /* SystemConfiguration.framework in Frameworks */,
+				B9227F6C15CBC040005216A8 /* StoreKit.framework in Frameworks */,
+				B9227F6A15CBC031005216A8 /* MessageUI.framework in Frameworks */,
+				B9227F6815CBC026005216A8 /* ImageIO.framework in Frameworks */,
 				B9227F0815CBBF1F005216A8 /* UIKit.framework in Frameworks */,
 				B9227F0A15CBBF1F005216A8 /* Foundation.framework in Frameworks */,
 				B9227F0C15CBBF1F005216A8 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +143,11 @@
 		B9227F0615CBBF1F005216A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9227F6F15CBC053005216A8 /* QuartzCore.framework */,
+				B9227F6D15CBC046005216A8 /* SystemConfiguration.framework */,
+				B9227F6B15CBC040005216A8 /* StoreKit.framework */,
+				B9227F6915CBC031005216A8 /* MessageUI.framework */,
+				B9227F6715CBC026005216A8 /* ImageIO.framework */,
 				B9227F0715CBBF1F005216A8 /* UIKit.framework */,
 				B9227F0915CBBF1F005216A8 /* Foundation.framework */,
 				B9227F0B15CBBF1F005216A8 /* CoreGraphics.framework */,
@@ -79,6 +158,7 @@
 		B9227F0D15CBBF1F005216A8 /* NewsstandMagazine */ = {
 			isa = PBXGroup;
 			children = (
+				B9227F2715CBBF46005216A8 /* Class */,
 				B9227F1615CBBF1F005216A8 /* GRAppDelegate.h */,
 				B9227F1715CBBF1F005216A8 /* GRAppDelegate.m */,
 				B9227F1915CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard */,
@@ -99,6 +179,92 @@
 				B9227F1515CBBF1F005216A8 /* NewsstandMagazine-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9227F2715CBBF46005216A8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B9227F7115CBC0FB005216A8 /* PDF */,
+				B9227F6615CBBFF7005216A8 /* Images */,
+				B9227F3E15CBBFAE005216A8 /* Grid */,
+				B9227F3415CBBF71005216A8 /* Hud */,
+				B9227F3315CBBF68005216A8 /* Downloader */,
+				B9227F2815CBBF5A005216A8 /* MagazineGridViewCellViewController.h */,
+				B9227F2915CBBF5A005216A8 /* MagazineGridViewCellViewController.m */,
+				B9227F2A15CBBF5A005216A8 /* MagazineGridViewCell.h */,
+				B9227F2B15CBBF5A005216A8 /* MagazineGridViewCell.m */,
+				B9227F2C15CBBF5A005216A8 /* MagazineGridViewCell.xib */,
+				B9227F2D15CBBF5A005216A8 /* MagazineReaderViewController.h */,
+				B9227F2E15CBBF5A005216A8 /* MagazineReaderViewController.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		B9227F3315CBBF68005216A8 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				B9227F3515CBBF8A005216A8 /* UIDownloadBar.h */,
+				B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */,
+			);
+			name = Downloader;
+			sourceTree = "<group>";
+		};
+		B9227F3415CBBF71005216A8 /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				B9227F3815CBBF97005216A8 /* MBProgressHUD.h */,
+				B9227F3915CBBF97005216A8 /* MBProgressHUD.m */,
+				B9227F3A15CBBF97005216A8 /* Reachability.h */,
+				B9227F3B15CBBF97005216A8 /* Reachability.m */,
+			);
+			name = Hud;
+			sourceTree = "<group>";
+		};
+		B9227F3E15CBBFAE005216A8 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				B9227F3F15CBBFDA005216A8 /* AQGridView.h */,
+				B9227F4015CBBFDA005216A8 /* AQGridView.m */,
+				B9227F4115CBBFDA005216A8 /* AQGridView+CellLayout.h */,
+				B9227F4215CBBFDA005216A8 /* AQGridView+CellLocationDelegation.h */,
+				B9227F4315CBBFDA005216A8 /* AQGridViewAnimatorItem.h */,
+				B9227F4415CBBFDA005216A8 /* AQGridViewAnimatorItem.m */,
+				B9227F4515CBBFDA005216A8 /* AQGridViewCell.h */,
+				B9227F4615CBBFDA005216A8 /* AQGridViewCell.m */,
+				B9227F4715CBBFDA005216A8 /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				B9227F4815CBBFDA005216A8 /* AQGridViewController.h */,
+				B9227F4915CBBFDA005216A8 /* AQGridViewController.m */,
+				B9227F4A15CBBFDA005216A8 /* AQGridViewData.h */,
+				B9227F4B15CBBFDA005216A8 /* AQGridViewData.m */,
+				B9227F4C15CBBFDA005216A8 /* AQGridViewUpdateInfo.h */,
+				B9227F4D15CBBFDA005216A8 /* AQGridViewUpdateInfo.m */,
+				B9227F4E15CBBFDA005216A8 /* AQGridViewUpdateItem.h */,
+				B9227F4F15CBBFDA005216A8 /* AQGridViewUpdateItem.m */,
+				B9227F5015CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.h */,
+				B9227F5115CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m */,
+				B9227F5215CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.h */,
+				B9227F5315CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m */,
+				B9227F5415CBBFDA005216A8 /* UIColor+AQGridView.h */,
+				B9227F5515CBBFDA005216A8 /* UIColor+AQGridView.m */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
+		B9227F6615CBBFF7005216A8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9227F6015CBBFE3005216A8 /* iPhone-alert.png */,
+				B9227F6115CBBFE3005216A8 /* ipad-alert.png */,
+				B9227F6215CBBFE3005216A8 /* no-image.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B9227F7115CBC0FB005216A8 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +322,10 @@
 				B9227F1215CBBF1F005216A8 /* InfoPlist.strings in Resources */,
 				B9227F1B15CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B9227F1E15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard in Resources */,
+				B9227F3115CBBF5A005216A8 /* MagazineGridViewCell.xib in Resources */,
+				B9227F6315CBBFE3005216A8 /* iPhone-alert.png in Resources */,
+				B9227F6415CBBFE3005216A8 /* ipad-alert.png in Resources */,
+				B9227F6515CBBFE3005216A8 /* no-image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +339,22 @@
 				B9227F1415CBBF1F005216A8 /* main.m in Sources */,
 				B9227F1815CBBF1F005216A8 /* GRAppDelegate.m in Sources */,
 				B9227F2115CBBF1F005216A8 /* GRViewController.m in Sources */,
+				B9227F2F15CBBF5A005216A8 /* MagazineGridViewCellViewController.m in Sources */,
+				B9227F3015CBBF5A005216A8 /* MagazineGridViewCell.m in Sources */,
+				B9227F3215CBBF5A005216A8 /* MagazineReaderViewController.m in Sources */,
+				B9227F3715CBBF8A005216A8 /* UIDownloadBar.m in Sources */,
+				B9227F3C15CBBF97005216A8 /* MBProgressHUD.m in Sources */,
+				B9227F3D15CBBF97005216A8 /* Reachability.m in Sources */,
+				B9227F5615CBBFDA005216A8 /* AQGridView.m in Sources */,
+				B9227F5715CBBFDA005216A8 /* AQGridViewAnimatorItem.m in Sources */,
+				B9227F5815CBBFDA005216A8 /* AQGridViewCell.m in Sources */,
+				B9227F5915CBBFDA005216A8 /* AQGridViewController.m in Sources */,
+				B9227F5A15CBBFDA005216A8 /* AQGridViewData.m in Sources */,
+				B9227F5B15CBBFDA005216A8 /* AQGridViewUpdateInfo.m in Sources */,
+				B9227F5C15CBBFDA005216A8 /* AQGridViewUpdateItem.m in Sources */,
+				B9227F5D15CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				B9227F5E15CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				B9227F5F15CBBFDA005216A8 /* UIColor+AQGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
