@@ -5,7 +5,7 @@
 
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
-
+#define kDOCSFOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
 @interface NSDictionary(JSONCategories)
 +(NSDictionary*)dictionaryWithContentsOfJSONURLString:(NSString*)urlAddress;
@@ -141,47 +141,58 @@
 	NSString *name = [[names objectAtIndex:index] valueForKey:@"title"];
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[names objectAtIndex:index] valueForKey:@"coverURL"]]]];
     
-    NSString *magStatus = [[names objectAtIndex:index] valueForKey:@"free"];
-    if ([magStatus isEqualToString:@"YES"]) {
-        [self.downloadBtn setTitle:@"Free" forState:UIControlStateNormal];
+    NSString *fileName = [[[names objectAtIndex:index] valueForKey:@"downloadURL"] lastPathComponent];
+    
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@",kDOCSFOLDER,fileName];
+    NSLog(@"File Name is:--->%@",filePath);
+    NSFileManager *filemgr;
+    filemgr = [NSFileManager defaultManager];
+    if ([filemgr fileExistsAtPath:filePath] == YES) {
+        NSLog (@"File exists...");
+        [self.downloadBtn setTitle:@"Open" forState:UIControlStateNormal];
     }
     else {
-        [self.downloadBtn setTitle:@"Purchase" forState:UIControlStateNormal];
+        NSLog (@"File not found Display title to button in grid view");
+        NSString *magStatus = [[names objectAtIndex:index] valueForKey:@"free"];
+        if ([magStatus isEqualToString:@"YES"]) {
+            [self.downloadBtn setTitle:@"Free" forState:UIControlStateNormal];
+        }
+        else {
+            [self.downloadBtn setTitle:@"Purchase" forState:UIControlStateNormal];
+        }
     }
     
-	//NSString *imageName = [[name lowercaseString] stringByAppendingString:@".png"];
+    
+    
+    //NSString *imageName = [[name lowercaseString] stringByAppendingString:@".png"];
     if (image != nil) {
         content.imageView.image = image;
     }
     else {
         content.imageView.image = [UIImage imageNamed:@"no-image.png"];
     }
-	content.textLabel.text = name;
+    content.textLabel.text = name;
     
-	return cell;
+    return cell;
 }
 
 - (CGSize)portraitGridCellSizeForGridView:(AQGridView *)aGridView
 {
-	[[NSBundle mainBundle] loadNibNamed:@"MagazineGridViewCell" owner:self options:nil];
-	return gridViewCellContent.frame.size;
+    [[NSBundle mainBundle] loadNibNamed:@"MagazineGridViewCell" owner:self options:nil];
+    return gridViewCellContent.frame.size;
 }
 
 - (void) gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index {
     
     //Get the cell at the selected index
     
-    
-    
 }
 
 
 #pragma mark -
-#pragma HUD
-#pragma mark -
+#pragma mark - HUD
 
-- (void)dismissHUD:(id)arg
-{
+- (void)dismissHUD:(id)arg {
     
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     self.hud = nil;
@@ -194,16 +205,16 @@
     _hud.labelText = @"Warning!";
     _hud.detailsLabelText = @"Request Timeout ";
     _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"golf.png"]];
-	_hud.mode = MBProgressHUDModeCustomView;
+    _hud.mode = MBProgressHUDModeCustomView;
     [self performSelector:@selector(dismissHUD:) withObject:nil afterDelay:1.0];
     
 }
 
 - (void)dealloc
 {
-	[gridView release];
-	[gridViewCellContent release];
-	[names release];
+    [gridView release];
+    [gridViewCellContent release];
+    [names release];
     [bView release];
     [downloadBtn release];
     [super dealloc];
@@ -219,6 +230,7 @@
 - (IBAction)downloadFileFromServer:(id)sender {
     
     //NSLog(@"Download url:-->%@",sender);
+    ///
     
     UIButton *button = (UIButton *)sender;
     int row = button.tag;
@@ -226,11 +238,13 @@
     NSLog(@"Cell Row:-->%d",row);
     NSLog(@"x: %f", position.x);
     
+    NSString *downloadURl1 = @"https://dl.dropbox.com/u/48980236/ProCare.pdf";
+    NSString *downloadURl2 = [[names objectAtIndex:row] valueForKey:@"downloadURL"];
     
     NSString *magStatus = [[names objectAtIndex:row] valueForKey:@"free"];
     if ([magStatus isEqualToString:@"YES"]) {
         
-        bar = [[UIDownloadBar alloc] initWithURL:[NSURL URLWithString:[[names objectAtIndex:row] valueForKey:@"downloadURL"]]
+        bar = [[UIDownloadBar alloc] initWithURL:[NSURL URLWithString:downloadURl1]
                                 progressBarFrame:CGRectMake(position.x+12, position.y-5, 120, 20)
                                          timeout:15
                                         delegate:self];
@@ -240,7 +254,6 @@
         
     }
     
-    
 }
 
 #pragma mark -
@@ -249,10 +262,14 @@
 
 - (void)loadPDFFile:(NSString *)pdfFile
 {
+    NSString *pdfFilePath = [kDOCSFOLDER stringByAppendingPathComponent:pdfFile];
+    NSLog(@"%s", __FUNCTION__);
+    PDFViewerViewController *loadPdfController =[[PDFViewerViewController alloc] init];
+    //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:loadPdfController];
+    loadPdfController.fNamePath = pdfFilePath;
+    [self.navigationController pushViewController:loadPdfController animated:YES];
+    [loadPdfController release];
     
-	NSLog(@"%s", __FUNCTION__);
-    
-	
 }
 
 
@@ -261,13 +278,13 @@
 #pragma mark Downloaded
 
 - (void)downloadBar:(UIDownloadBar *)downloadBar didFinishWithData:(NSData *)fileData suggestedFilename:(NSString *)filename {
-	NSLog(@"%@", filename);
+    NSLog(@"Did Finis hWith Data %@", filename);
     
     [self loadPDFFile:filename];
 }
 
 - (void)downloadBar:(UIDownloadBar *)downloadBar didFailWithError:(NSError *)error {
-	NSLog(@"%@", error);
+    NSLog(@"%@", error);
 }
 
 - (void)downloadBarUpdated:(UIDownloadBar *)downloadBar {

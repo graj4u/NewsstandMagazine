@@ -11,6 +11,7 @@
 
 @implementation UIDownloadBar
 
+
 @synthesize DownloadRequest,
 DownloadConnection,
 receivedData,
@@ -31,10 +32,10 @@ possibleFilename;
 	NSLog(@"%f",bytesReceived);
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: downloadUrl];
 	
-	[request addValue: [NSString stringWithFormat: @"bytes=%.0f-", bytesReceived ] forHTTPHeaderField: @"Range"];	
+	[request addValue: [NSString stringWithFormat: @"bytes=%.0f-", bytesReceived ] forHTTPHeaderField: @"Range"];
 	
 	DownloadConnection = [NSURLConnection connectionWithRequest:request
-                                                       delegate: self];	
+                                                       delegate: self];
 }
 
 
@@ -85,7 +86,6 @@ possibleFilename;
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
 	[self.delegate downloadBar:self didFailWithError:error];
 	operationFailed = YES;
-	[connection release];
 }
 
 //- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -96,8 +96,8 @@ possibleFilename;
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
 	
 	NSLog(@"[DO::didReceiveData] %d operation", (int)self);
-	NSLog(@"[DO::didReceiveData] ddb: %.2f, wdb: %.2f, ratio: %.2f", 
-		  (float)bytesReceived, 
+	NSLog(@"[DO::didReceiveData] ddb: %.2f, wdb: %.2f, ratio: %.2f",
+		  (float)bytesReceived,
 		  (float)expectedBytes,
 		  (float)bytesReceived / (float)expectedBytes);
 	
@@ -120,25 +120,26 @@ possibleFilename;
 			expectedBytes = bytesReceived;
 			operationFinished = YES;
 		}
-	}		
+	}
 }
 
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	[self.delegate downloadBar:self didFinishWithData:self.receivedData suggestedFilename:localFilename];
 	operationFinished = YES;
-	NSLog(@"Connection did finish loading...");
+	NSLog(@"Connection did finish loading...%@",localFilename);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *pdfPath = [documentsDirectory stringByAppendingPathComponent:localFilename];
+    
+    unsigned char byteBuffer[[self.receivedData length]];
+    [self.receivedData getBytes:byteBuffer];
+    
+    [self.receivedData  writeToFile:pdfPath atomically:YES];
+    
 	//[connection release];
 }
 
 
-- (void)dealloc {
-	[possibleFilename release];
-	[localFilename release];
-	[receivedData release];
-	[DownloadRequest release];
-    //	[DownloadConnection release];
-	[super dealloc];
-}
 
 @end

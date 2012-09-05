@@ -6,6 +6,7 @@
 #import "MBProgressHUD.h"
 #import "MagazineReaderViewController.h"
 #import "UIDownloadBar.h"
+#import "PDFViewerViewController.h"
 
 @interface MagazineGridViewCellViewController : UIViewController <AQGridViewDataSource,AQGridViewDelegate,UIDownloadBarDelegate> {
     MBProgressHUD *_hud;

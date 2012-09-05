@@ -15,12 +15,10 @@
 		B9227F1815CBBF1F005216A8 /* GRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F1715CBBF1F005216A8 /* GRAppDelegate.m */; };
 		B9227F1B15CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9227F1915CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard */; };
 		B9227F1E15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9227F1C15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard */; };
-		B9227F2115CBBF1F005216A8 /* GRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2015CBBF1F005216A8 /* GRViewController.m */; };
 		B9227F2F15CBBF5A005216A8 /* MagazineGridViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2915CBBF5A005216A8 /* MagazineGridViewCellViewController.m */; };
 		B9227F3015CBBF5A005216A8 /* MagazineGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2B15CBBF5A005216A8 /* MagazineGridViewCell.m */; };
 		B9227F3115CBBF5A005216A8 /* MagazineGridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9227F2C15CBBF5A005216A8 /* MagazineGridViewCell.xib */; };
 		B9227F3215CBBF5A005216A8 /* MagazineReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F2E15CBBF5A005216A8 /* MagazineReaderViewController.m */; };
-		B9227F3715CBBF8A005216A8 /* UIDownloadBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */; };
 		B9227F3C15CBBF97005216A8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3915CBBF97005216A8 /* MBProgressHUD.m */; };
 		B9227F3D15CBBF97005216A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F3B15CBBF97005216A8 /* Reachability.m */; };
 		B9227F5615CBBFDA005216A8 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9227F4015CBBFDA005216A8 /* AQGridView.m */; };
@@ -41,6 +39,10 @@
 		B9227F6C15CBC040005216A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6B15CBC040005216A8 /* StoreKit.framework */; };
 		B9227F6E15CBC046005216A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6D15CBC046005216A8 /* SystemConfiguration.framework */; };
 		B9227F7015CBC053005216A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9227F6F15CBC053005216A8 /* QuartzCore.framework */; };
+		B997A1B915F763A6007C0367 /* PDFViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B997A1B815F763A6007C0367 /* PDFViewerViewController.m */; };
+		B997A1C715F773BF007C0367 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B997A1C615F773BF007C0367 /* Default-Portrait~ipad.png */; };
+		B997A1CC15F773FE007C0367 /* iphone_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B997A1CB15F773FE007C0367 /* iphone_icon.png */; };
+		B997A1CF15F774CD007C0367 /* UIDownloadBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B997A1CE15F774CD007C0367 /* UIDownloadBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +58,6 @@
 		B9227F1715CBBF1F005216A8 /* GRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRAppDelegate.m; sourceTree = "<group>"; };
 		B9227F1A15CBBF1F005216A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B9227F1D15CBBF1F005216A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B9227F1F15CBBF1F005216A8 /* GRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRViewController.h; sourceTree = "<group>"; };
-		B9227F2015CBBF1F005216A8 /* GRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRViewController.m; sourceTree = "<group>"; };
 		B9227F2815CBBF5A005216A8 /* MagazineGridViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineGridViewCellViewController.h; sourceTree = "<group>"; };
 		B9227F2915CBBF5A005216A8 /* MagazineGridViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineGridViewCellViewController.m; sourceTree = "<group>"; };
 		B9227F2A15CBBF5A005216A8 /* MagazineGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineGridViewCell.h; sourceTree = "<group>"; };
@@ -65,8 +65,6 @@
 		B9227F2C15CBBF5A005216A8 /* MagazineGridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagazineGridViewCell.xib; sourceTree = "<group>"; };
 		B9227F2D15CBBF5A005216A8 /* MagazineReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineReaderViewController.h; sourceTree = "<group>"; };
 		B9227F2E15CBBF5A005216A8 /* MagazineReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineReaderViewController.m; sourceTree = "<group>"; };
-		B9227F3515CBBF8A005216A8 /* UIDownloadBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownloadBar.h; sourceTree = "<group>"; };
-		B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownloadBar.m; sourceTree = "<group>"; };
 		B9227F3815CBBF97005216A8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B9227F3915CBBF97005216A8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B9227F3A15CBBF97005216A8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -102,6 +100,13 @@
 		B9227F6B15CBC040005216A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B9227F6D15CBC046005216A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B9227F6F15CBC053005216A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B997A1B715F763A6007C0367 /* PDFViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewerViewController.h; sourceTree = "<group>"; };
+		B997A1B815F763A6007C0367 /* PDFViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewerViewController.m; sourceTree = "<group>"; };
+		B997A1C615F773BF007C0367 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		B997A1C915F773ED007C0367 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B997A1CB15F773FE007C0367 /* iphone_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_icon.png; sourceTree = "<group>"; };
+		B997A1CD15F774CD007C0367 /* UIDownloadBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownloadBar.h; sourceTree = "<group>"; };
+		B997A1CE15F774CD007C0367 /* UIDownloadBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownloadBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +168,6 @@
 				B9227F1715CBBF1F005216A8 /* GRAppDelegate.m */,
 				B9227F1915CBBF1F005216A8 /* MainStoryboard_iPhone.storyboard */,
 				B9227F1C15CBBF1F005216A8 /* MainStoryboard_iPad.storyboard */,
-				B9227F1F15CBBF1F005216A8 /* GRViewController.h */,
-				B9227F2015CBBF1F005216A8 /* GRViewController.m */,
 				B9227F0E15CBBF1F005216A8 /* Supporting Files */,
 			);
 			path = NewsstandMagazine;
@@ -173,6 +176,7 @@
 		B9227F0E15CBBF1F005216A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B997A1D415F77674007C0367 /* Images */,
 				B9227F0F15CBBF1F005216A8 /* NewsstandMagazine-Info.plist */,
 				B9227F1015CBBF1F005216A8 /* InfoPlist.strings */,
 				B9227F1315CBBF1F005216A8 /* main.m */,
@@ -203,8 +207,8 @@
 		B9227F3315CBBF68005216A8 /* Downloader */ = {
 			isa = PBXGroup;
 			children = (
-				B9227F3515CBBF8A005216A8 /* UIDownloadBar.h */,
-				B9227F3615CBBF8A005216A8 /* UIDownloadBar.m */,
+				B997A1CD15F774CD007C0367 /* UIDownloadBar.h */,
+				B997A1CE15F774CD007C0367 /* UIDownloadBar.m */,
 			);
 			name = Downloader;
 			sourceTree = "<group>";
@@ -263,8 +267,21 @@
 		B9227F7115CBC0FB005216A8 /* PDF */ = {
 			isa = PBXGroup;
 			children = (
+				B997A1B715F763A6007C0367 /* PDFViewerViewController.h */,
+				B997A1B815F763A6007C0367 /* PDFViewerViewController.m */,
 			);
 			name = PDF;
+			sourceTree = "<group>";
+		};
+		B997A1D415F77674007C0367 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B997A1CB15F773FE007C0367 /* iphone_icon.png */,
+				B997A1C915F773ED007C0367 /* Default.png */,
+				B997A1C615F773BF007C0367 /* Default-Portrait~ipad.png */,
+			);
+			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +343,8 @@
 				B9227F6315CBBFE3005216A8 /* iPhone-alert.png in Resources */,
 				B9227F6415CBBFE3005216A8 /* ipad-alert.png in Resources */,
 				B9227F6515CBBFE3005216A8 /* no-image.png in Resources */,
+				B997A1C715F773BF007C0367 /* Default-Portrait~ipad.png in Resources */,
+				B997A1CC15F773FE007C0367 /* iphone_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +357,9 @@
 			files = (
 				B9227F1415CBBF1F005216A8 /* main.m in Sources */,
 				B9227F1815CBBF1F005216A8 /* GRAppDelegate.m in Sources */,
-				B9227F2115CBBF1F005216A8 /* GRViewController.m in Sources */,
 				B9227F2F15CBBF5A005216A8 /* MagazineGridViewCellViewController.m in Sources */,
 				B9227F3015CBBF5A005216A8 /* MagazineGridViewCell.m in Sources */,
 				B9227F3215CBBF5A005216A8 /* MagazineReaderViewController.m in Sources */,
-				B9227F3715CBBF8A005216A8 /* UIDownloadBar.m in Sources */,
 				B9227F3C15CBBF97005216A8 /* MBProgressHUD.m in Sources */,
 				B9227F3D15CBBF97005216A8 /* Reachability.m in Sources */,
 				B9227F5615CBBFDA005216A8 /* AQGridView.m in Sources */,
@@ -355,6 +372,8 @@
 				B9227F5D15CBBFDA005216A8 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
 				B9227F5E15CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
 				B9227F5F15CBBFDA005216A8 /* UIColor+AQGridView.m in Sources */,
+				B997A1B915F763A6007C0367 /* PDFViewerViewController.m in Sources */,
+				B997A1CF15F774CD007C0367 /* UIDownloadBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +497,7 @@
 				B9227F2615CBBF1F005216A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

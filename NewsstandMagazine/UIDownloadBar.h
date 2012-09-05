@@ -23,7 +23,7 @@
 	long long			expectedBytes;
 	
 	BOOL				operationFinished, operationFailed, operationBreaked;
-	BOOL				operationIsOK;	
+	BOOL				operationIsOK;
 	BOOL				appendIfExist;
 	FILE				*downFile;
 	//NSString			*fileUrlPath;
