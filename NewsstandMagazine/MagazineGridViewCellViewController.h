@@ -20,7 +20,5 @@
 @property (retain, nonatomic) NSDictionary* json;
 @property (retain, nonatomic) IBOutlet UIButton *downloadBtn;
 
-- (IBAction)downloadFileFromServer:(id)sender;
-
 @end
 

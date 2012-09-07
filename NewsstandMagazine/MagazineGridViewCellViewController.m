@@ -142,27 +142,35 @@
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[names objectAtIndex:index] valueForKey:@"coverURL"]]]];
     
     NSString *fileName = [[[names objectAtIndex:index] valueForKey:@"downloadURL"] lastPathComponent];
-    
     NSString *filePath = [NSString stringWithFormat:@"%@/%@",kDOCSFOLDER,fileName];
     NSLog(@"File Name is:--->%@",filePath);
     NSFileManager *filemgr;
     filemgr = [NSFileManager defaultManager];
     if ([filemgr fileExistsAtPath:filePath] == YES) {
-        NSLog (@"File exists...");
+        NSLog (@"File exists at specific path...");
         [self.downloadBtn setTitle:@"Open" forState:UIControlStateNormal];
+        [self.downloadBtn addTarget:self
+                             action:@selector(openBook:)
+                   forControlEvents:UIControlEventTouchUpInside];
     }
     else {
         NSLog (@"File not found Display title to button in grid view");
         NSString *magStatus = [[names objectAtIndex:index] valueForKey:@"free"];
         if ([magStatus isEqualToString:@"YES"]) {
             [self.downloadBtn setTitle:@"Free" forState:UIControlStateNormal];
+            [self.downloadBtn addTarget:self
+                                 action:@selector(downloadBookFromServer:)
+                       forControlEvents:UIControlEventTouchUpInside];
+            
         }
         else {
             [self.downloadBtn setTitle:@"Purchase" forState:UIControlStateNormal];
+            [self.downloadBtn addTarget:self
+                                 action:@selector(purchaseBookFromStore:)
+                       forControlEvents:UIControlEventTouchUpInside];
         }
     }
-    
-    
+    self.downloadBtn.tag = index;
     
     //NSString *imageName = [[name lowercaseString] stringByAppendingString:@".png"];
     if (image != nil) {
@@ -226,39 +234,40 @@
     [super viewDidUnload];
 }
 
-
-- (IBAction)downloadFileFromServer:(id)sender {
-    
-    //NSLog(@"Download url:-->%@",sender);
-    ///
-    
+-(void)purchaseBookFromStore:(id)sender {
+    NSLog(@"Purchase Book From Store.......");
     UIButton *button = (UIButton *)sender;
     int row = button.tag;
+    NSLog(@"Index of button:%d",row);
+}
+
+-(void)openBook:(id)sender {
+    NSLog(@"Open Book........");
+    UIButton *button = (UIButton *)sender;
+    int row = button.tag;
+    NSLog(@"Index of button:%d",row);
+    NSString *fileName = [[[names objectAtIndex:row] valueForKey:@"downloadURL"] lastPathComponent];
+    [self loadPDFFile:fileName];
+}
+
+-(void)downloadBookFromServer:(NSInteger)sender {
+    NSLog(@"Download Book From Server.........");
+    UIButton *button = (UIButton *)sender;
+    int row = button.tag;
+    NSLog(@"Index of button:%d",row);
     CGPoint position = button.frame.origin;
-    NSLog(@"Cell Row:-->%d",row);
-    NSLog(@"x: %f", position.x);
+    NSString *downloadURlStr= [[names objectAtIndex:row] valueForKey:@"downloadURL"];
     
-    NSString *downloadURl1 = @"https://dl.dropbox.com/u/48980236/ProCare.pdf";
-    NSString *downloadURl2 = [[names objectAtIndex:row] valueForKey:@"downloadURL"];
-    
-    NSString *magStatus = [[names objectAtIndex:row] valueForKey:@"free"];
-    if ([magStatus isEqualToString:@"YES"]) {
-        
-        bar = [[UIDownloadBar alloc] initWithURL:[NSURL URLWithString:downloadURl1]
-                                progressBarFrame:CGRectMake(position.x+12, position.y-5, 120, 20)
-                                         timeout:15
-                                        delegate:self];
-        [self.view addSubview:bar];
-    }
-    else {
-        
-    }
+    bar = [[UIDownloadBar alloc] initWithURL:[NSURL URLWithString:downloadURlStr]
+                            progressBarFrame:CGRectMake(position.x+12, position.y-5, 120, 20)
+                                     timeout:15
+                                    delegate:self];
+    [self.view addSubview:bar];
     
 }
 
 #pragma mark -
 #pragma mark - PDF REDER
-
 
 - (void)loadPDFFile:(NSString *)pdfFile
 {
@@ -273,14 +282,13 @@
 }
 
 
-
 #pragma mark -
 #pragma mark Downloaded
 
 - (void)downloadBar:(UIDownloadBar *)downloadBar didFinishWithData:(NSData *)fileData suggestedFilename:(NSString *)filename {
     NSLog(@"Did Finis hWith Data %@", filename);
-    
-    [self loadPDFFile:filename];
+    //[self loadPDFFile:filename];
+    [self.gridView reloadData];
 }
 
 - (void)downloadBar:(UIDownloadBar *)downloadBar didFailWithError:(NSError *)error {

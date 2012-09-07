@@ -92,9 +92,9 @@
 		B9227F5315CBBFDA005216A8 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
 		B9227F5415CBBFDA005216A8 /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
 		B9227F5515CBBFDA005216A8 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
-		B9227F6015CBBFE3005216A8 /* iPhone-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone-alert.png"; sourceTree = "<group>"; };
-		B9227F6115CBBFE3005216A8 /* ipad-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-alert.png"; sourceTree = "<group>"; };
-		B9227F6215CBBFE3005216A8 /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image.png"; sourceTree = "<group>"; };
+		B9227F6015CBBFE3005216A8 /* iPhone-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone-alert.png"; path = "NewsstandMagazine/iPhone-alert.png"; sourceTree = "<group>"; };
+		B9227F6115CBBFE3005216A8 /* ipad-alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-alert.png"; path = "NewsstandMagazine/ipad-alert.png"; sourceTree = "<group>"; };
+		B9227F6215CBBFE3005216A8 /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-image.png"; path = "NewsstandMagazine/no-image.png"; sourceTree = "<group>"; };
 		B9227F6715CBC026005216A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B9227F6915CBC031005216A8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B9227F6B15CBC040005216A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -189,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				B9227F7115CBC0FB005216A8 /* PDF */,
-				B9227F6615CBBFF7005216A8 /* Images */,
 				B9227F3E15CBBFAE005216A8 /* Grid */,
 				B9227F3415CBBF71005216A8 /* Hud */,
 				B9227F3315CBBF68005216A8 /* Downloader */,
@@ -254,16 +253,6 @@
 			name = Grid;
 			sourceTree = "<group>";
 		};
-		B9227F6615CBBFF7005216A8 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				B9227F6015CBBFE3005216A8 /* iPhone-alert.png */,
-				B9227F6115CBBFE3005216A8 /* ipad-alert.png */,
-				B9227F6215CBBFE3005216A8 /* no-image.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		B9227F7115CBC0FB005216A8 /* PDF */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +265,9 @@
 		B997A1D415F77674007C0367 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B9227F6015CBBFE3005216A8 /* iPhone-alert.png */,
+				B9227F6115CBBFE3005216A8 /* ipad-alert.png */,
+				B9227F6215CBBFE3005216A8 /* no-image.png */,
 				B997A1CB15F773FE007C0367 /* iphone_icon.png */,
 				B997A1C915F773ED007C0367 /* Default.png */,
 				B997A1C615F773BF007C0367 /* Default-Portrait~ipad.png */,
